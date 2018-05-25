@@ -1,43 +1,170 @@
 /* PALETTE COLORS */
 /* SOCIAL NETWORK ICON COLORS */
 /* MEDIA QUERY BREAKPOINTS */
-.plumber-container {
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  display: flex;
+  align-items: center; }
+
+.header {
+  width: 95%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-end; }
+  text-align: center;
+  justify-content: center; }
+  @media only screen and (min-width: 576px) {
+    .header {
+      text-align: left;
+      justify-content: space-between;
+      align-items: center; } }
+
+.profile-pic__1, .profile-pic__2, .profile-pic__3, .profile-pic__4, .profile-pic__5, .profile-pic__6, .profile-pic__7, .profile-pic__8, .container-bg {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.main-title {
+  color: #fefefe;
+  padding-bottom: 12px; }
+  @media only screen and (min-width: 768px) {
+    .main-title {
+      font-size: 5vh; } }
+  @media only screen and (min-width: 1400px) {
+    .main-title {
+      font-size: 5.2vh;
+      padding-left: 5vh;
+      padding-bottom: 5px; } }
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+.main-description {
+  color: #fefefe;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  font-size: 2.8vh; }
+  @media only screen and (min-width: 576px) {
+    .main-description {
+      font-size: 19px; } }
+  @media only screen and (min-width: 768px) {
+    .main-description {
+      font-size: 3.6vh; } }
+  @media only screen and (min-width: 1400px) {
+    .main-description {
+      font-size: 3.8vh;
+      padding-left: 5vh;
+      padding-bottom: 5px; } }
+
+.plumber-container {
+  margin: 0 auto;
+  width: 95%; }
+  @media only screen and (min-width: 576px) {
+    .plumber-container {
+      padding-top: 20px; } }
+  @media only screen and (min-width: 768px) {
+    .plumber-container {
+      padding-top: 35px; } }
+  @media only screen and (min-width: 1400px) {
+    .plumber-container {
+      padding-top: 50px; } }
 
 .plumber__box {
-  width: 90%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
   display: flex;
-  flex-wrap: wrap; }
-  @media only screen and (min-width: 1400px) {
+  flex-direction: column;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  background-color: #dedede; }
+  @media only screen and (min-width: 576px) {
     .plumber__box {
-      width: 400px;
-      margin: 15px;
-      padding: 5px 8px; } }
-
-.profile-pic-container {
-  width: 30%; }
-
-.profile-pic {
-  width: 100%; }
+      height: 300px; } }
+  @media only screen and (min-width: 768px) {
+    .plumber__box {
+      height: auto; } }
 
 .plumber {
   padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 15px;
   text-align: left; }
+
+.profile-pic-container {
+  width: 100%;
+  height: 250px; }
+
+.profile-pic__1 {
+  background-image: url("../media/IMG_3834-min.jpg");
+  background-position: center; }
+.profile-pic__2 {
+  background-image: url("../media/IMG_3831-min.jpg");
+  background-position: center; }
+.profile-pic__3 {
+  background-image: url("../media/IMG_3836-min.jpg");
+  background-position: center; }
+.profile-pic__4 {
+  background-image: url("../media/IMG_3838-min.jpg");
+  background-position: center; }
+.profile-pic__5 {
+  background-image: url("../media/1.jpg");
+  background-position: center; }
+.profile-pic__6 {
+  background-image: url("../media/2.jpg");
+  background-position: center; }
+.profile-pic__7 {
+  background-image: url("../media/3.jpg");
+  background-position: center; }
+.profile-pic__8 {
+  background-image: url("../media/4.jpg");
+  background-position: center; }
 
 .plumber > div {
   padding-bottom: 5px; }
 
 .plumber__name {
-  font-size: 18px;
-  font-weight: bold; }
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; }
 
-.plumber > div > i {
+.plumber__attribute {
+  font-size: 17px;
+  text-align: justify;
   padding-right: 15px; }
+
+.plumber__attribute-icon {
+  padding-right: 18px; }
+
+.container-bg {
+  background: linear-gradient(rgba(20, 20, 20, 0.78)), url("../media/plumbing-840835_1920-min.jpg") no-repeat center; }
+
+.ranking {
+  display: flex; }
+  .ranking i {
+    font-size: 18px;
+    padding-right: 8px;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.25); }
+
+.tiko {
+  width: 200px; }
+  @media only screen and (min-width: 576px) {
+    .tiko {
+      width: 150px; } }
+  @media only screen and (min-width: 768px) {
+    .tiko {
+      width: 200px; } }
+  @media only screen and (min-width: 992px) {
+    .tiko {
+      width: 250px; } }
+
+.tiko-container {
+  align-self: center; }
 
 .footer {
   width: 100%;
